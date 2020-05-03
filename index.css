@@ -1,0 +1,287 @@
+
+  html {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+  }
+
+body{
+   
+    font-family: Arial, Helvetica, sans-serif;
+    color: dark slategray;
+    padding:0;
+    margin:0;
+}
+#header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    min-height: 75px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(2, 75, 117, 0.95);
+    z-index: 2;
+    padding: 0 20px;
+}
+@media only screen and (max-width: 768px) {
+	#header{
+        flex-flow: row wrap;
+        
+        padding: none;
+    }
+}
+#logo {
+    width: 60vw;
+   
+}
+@media only screen and (max-width: 768px) {
+	#logo{
+        display: flex;
+        width: 100%;
+        max-height: 80px;
+        
+        
+    }
+}
+#icon{
+    display:none;
+}
+@media only screen and (max-width: 768px) {
+	#icon{
+        display: block;
+        line-height: 80px;
+        text-align: left;
+        font-size: 40px;
+        
+    }
+}
+
+
+.reg .list {
+display: flex;
+flex-direction: row nowrap;
+justify-content: flex-end;
+align-items: center;
+
+
+}
+@media only screen and (max-width: 768px) {
+	.reg .list{
+        
+        display: none;
+        
+    }
+ 
+    .reg.responsive {
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+   .responsive .list{
+    display: block;
+    flex-basis: 100%;
+   
+    
+}
+
+}    
+
+#header-img{
+    height: 100px;
+    width: 20vw;
+    
+    
+    
+}
+@media only screen and (max-width: 768px) {
+	#header-img{
+        height: 80px;
+        margin-top: 0px;
+        position: absolute;
+        right: 40vw;
+        
+        
+        
+    }
+}
+li{
+    list-style: none;
+    
+}
+@media only screen and (max-width: 768px) {
+	li {
+        flex: 1 0 auto;
+        min-width: 100%;
+        
+    }
+}
+
+a {
+    text-align: right;
+    
+    line-height: 6vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: white;
+    
+
+    }
+    @media only screen and (max-width: 768px) {
+        a{
+            text-align: center;
+        
+            
+        }
+        .nav-link{
+
+            width: 100%;
+            text-align: center;
+            position: relative;
+            right: 3vw;
+        }
+    }
+   
+    a:hover {
+        color: black;
+    }
+   
+    #feature-sect, #video-sect, #email-sect{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 100vh;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-image: url("guitar1.jpg");
+
+    }
+    @media only screen and (max-width: 768px){
+        #feature-sect {
+            background-image: url("guitars4.jpg");
+        }
+        
+    }
+    .feat-icon {
+        padding-bottom: 20px;
+        font-size: 40px;
+        text-align: center;
+    }
+    @media only screen and (max-width: 768px){
+        .feat-icon {
+            font-size: 30px;
+            padding: none;
+        }
+    }
+    #video-sect {
+        background-image: url("guitar2.jpg");
+        
+    }
+    @media only screen and (max-width: 768px){
+        #video-sect {
+            background-image: url("guitar6.jpg");
+    }
+}
+    #video{
+        height: 30vw;
+    }
+    @media only screen and (max-width: 768px){
+        #video {
+            height: 50vw;
+        }
+    }
+    #sect-div, #video-div, #form{
+        width:60%;
+        max-height: 70%;
+        margin: auto;
+        background-color: rgb(255,255,255,.75);
+        padding: 2%;
+        border-radius: 10px;
+
+    
+    }
+    @media only screen and (max-width: 768px) {
+        
+            #sect-div, #video-div, #form{
+                    width: 90%;
+                    max-height: 70vh
+            }
+
+        
+    }
+    #email-sect{
+        
+        background-image: url("guitar3.jpg");
+    }
+    @media only screen and (max-width: 768px) {
+        #email-sect {
+        background-image: url("guitar5.jpg");
+        
+    }
+}
+
+   
+    h2 {
+        font-size: 40px;
+        
+    }
+    @media only screen and (max-width: 768px){
+        h2{
+            font-size: 30px;
+            
+
+        }
+        p{
+            font-size: 15px;
+        }
+        h3{
+            font-size: 20px;
+            
+        }
+    }
+    h2, h3{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    .feature-heading{
+        text-align: left;
+    }
+    
+    input {
+        width: 100%;
+        font-size: 20px;
+        padding: 5px 0;
+        margin-top: 15px;
+        border-radius: 10px;
+    }
+    input[type="submit"]{
+        background-color: rgba(2, 75, 117, 0.95);
+        color: white;
+    }
+    input[type="text"]{
+        overflow: hidden;
+
+    }
+    footer {
+        width: 100%;
+        min-height: 100px;
+        background-color: rgba(2, 75, 117, 0.8);
+        z-index: 2;
+        margin: auto;
+        position: absolute;
+        bottom: -200vh;
+        
+       
+    
+        
+        
+    }
+    footer p {
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        padding-top: 35px;
+    }
+   
