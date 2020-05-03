@@ -270,8 +270,9 @@ a {
         background-color: rgba(2, 75, 117, 0.8);
         z-index: 2;
         margin: auto;
-        position: absolute;
-        bottom: -200vh;
+        position: relative;
+        bottom: 0;
+        margin-top: -100px;
         
        
     
